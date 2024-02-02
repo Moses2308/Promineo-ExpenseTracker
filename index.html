@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container">
+    <br />
+    <form action="#" id="input-form">
+      <div class="row">
+        <div class="col-sm">
+          <div class="mb-3">
+            <label for="expense">Expense name</label><br />
+            <input
+              type="text"
+              name="expense"
+              id="expense"
+              class="form-control"
+              placeholder="Groceries"
+            />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="mb-3">
+            <label for="month">Month</label><br />
+            <input type="month" name="month" id="month" class="form-control" />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="mb-3">
+            <label for="cost">Cost Amount</label><br />
+            <input
+              type="number"
+              name="cost"
+              id="cost"
+              class="form-control"
+              placeholder="0.00"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    <br />
+    <div id="table-container"></div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- 
+create form
+create container
+
+ -->
